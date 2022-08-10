@@ -1,0 +1,29 @@
+<!doctype html>
+
+<html>
+  <title>My Website</title>
+<body>
+  <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+  {% for video in videos %}
+  <div class="fb-post"
+      data-href={{video}}
+
+      data-width="500"></div>
+  <br/>
+ <button
+  onclick="btnOnClick('{{video}}');"
+    >
+  Get Statistics
+</button>
+<script>
+    function btnOnClick(url) {
+    window.location = `/test?${url}`;
+}
+</script>
+
+
+{% endfor %}
+
+</body>
+</html>
+
