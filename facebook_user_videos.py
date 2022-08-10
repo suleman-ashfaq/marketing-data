@@ -5,6 +5,9 @@ import yt_dlp
 
 from main import get_labels
 
+token = "EAAOjzp6FaTcBAHbQZAT5Mz3mjJkRTuh0Wik0rWZCfPwrhCq2oERZCoZABXjjJHyS0Pz08OVLWvbher39uTcidTgKGtZCRyAAK6wOS4ea6MzTqYuawuDCZCqCJeiiLhChVIzdrwFI0OMsP6UZAiJuV7UNvZCWi9xHyVGfnoIETlL0keCdnknsSixZCAuCEjGUzE69TdSRFColrMwCmJL5kRPni"
+
+
 def download_video(LINK,file_name):
     URLS = []
     URLS.append(LINK)
@@ -24,7 +27,6 @@ def get_views_likes_():
     # exactly what you're after 😉
     # token = graph.get_app_access_token(app_id, app_secret)
 
-    token = "EAAOjzp6FaTcBAHbQZAT5Mz3mjJkRTuh0Wik0rWZCfPwrhCq2oERZCoZABXjjJHyS0Pz08OVLWvbher39uTcidTgKGtZCRyAAK6wOS4ea6MzTqYuawuDCZCqCJeiiLhChVIzdrwFI0OMsP6UZAiJuV7UNvZCWi9xHyVGfnoIETlL0keCdnknsSixZCAuCEjGUzE69TdSRFColrMwCmJL5kRPni"
 
     graph = facebook.GraphAPI(access_token=token)
 
@@ -66,7 +68,6 @@ def get_views_likes_():
 
 
 def get_single_views(url):
-    token = "EAAOjzp6FaTcBAD5wEdu2l0Nz3FLNjqf1nmhHxZBrfn3KMIifhnB5WBZAotqAD0IoWNZBZBm3cRTmPhkfZCPbFrw5xdYKv8lBNTbBS2ibjhbId5R9wJ9BWqQNdGZACsPPWCzu89b1C79yKlodZANjyYh5BsVqZAI2QIwc4e3X6mWrya7mqIoOEBnY17IzRBANwgWGLd9xIl6I8llaqLmpFhat"
 
     graph = facebook.GraphAPI(access_token=token)
 
@@ -111,7 +112,6 @@ def get_video_stats(permalink):
 
 def get_video_links():
 
-    token = "EAAOjzp6FaTcBAM9ZCl9R8DFIjTnfGgxlhuTrZAmYzvBOwcK0v0HoPSnB9EFbLbw0fyaF8VpnZCPYZBpbZBwgBJqyH6reifZAqthVKfZAfCIZAxlJKKlfFktJQAhkcwi4O59sde9w2yHZBVi32mdz8lWj3JZBOBFmNGLJZAlf2n25OEZASJjvcuIqVZC8DPzeZAUOZAmbP6ZBU8lCdgkZB42MQMBZBlXBM0"
 
     graph = facebook.GraphAPI(access_token=token)
 
